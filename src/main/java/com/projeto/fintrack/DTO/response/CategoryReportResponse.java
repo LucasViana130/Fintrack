@@ -1,4 +1,11 @@
 package com.projeto.fintrack.DTO.response;
 
-public class CategoryReportResponse {
-}
+import java.math.BigDecimal;
+
+public record CategoryReportResponse(
+        Long categoryId,
+        String categoryName,
+        String color,
+        BigDecimal total,
+        Double percentage
+) {}

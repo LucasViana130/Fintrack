@@ -1,4 +1,12 @@
 package com.projeto.fintrack.DTO.response;
 
-public class CategoryResponse {
-}
+import com.projeto.fintrack.domain.enums.TransactionType;
+
+public record CategoryResponse(
+        Long id,
+        String name,
+        TransactionType type,
+        String color,
+        Boolean active,
+        Boolean isDefault
+) {}

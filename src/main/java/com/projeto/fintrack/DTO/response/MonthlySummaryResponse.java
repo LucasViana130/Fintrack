@@ -2,11 +2,11 @@ package com.projeto.fintrack.DTO.response;
 
 import java.math.BigDecimal;
 
-public record BalanceEvolutionResponse(
+public record MonthlySummaryResponse(
         int year,
         int month,
-        BigDecimal income,
-        BigDecimal expense,
+        BigDecimal totalIncome,
+        BigDecimal totalExpense,
         BigDecimal balance
 ) {}
 

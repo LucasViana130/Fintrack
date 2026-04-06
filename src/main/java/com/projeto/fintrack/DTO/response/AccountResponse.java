@@ -1,4 +1,16 @@
 package com.projeto.fintrack.DTO.response;
 
-public class AccountResponse {
-}
+import com.projeto.fintrack.domain.enums.AccountType;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+public record AccountResponse(
+        Long id,
+        String name,
+        AccountType type,
+        String description,
+        Boolean active,
+        BigDecimal balance,
+        LocalDateTime createdAt
+) {}
