@@ -39,5 +39,6 @@ springdoc:
 application:
   security:
     jwt:
-      secret: ${JWT_SECRET:my-very-secret-key-for-fintrack-app-that-should-be-long}
-      expiration: 86400000 # 24 horas em ms
+      secret: ${SGu6/B1JYLYpH0Y8i/HK7oXCs2Bxtfo0O1eKGO4J0JQXGKfr9jX4IJzhHTV7hC6z
+        FK/Y6XjlL/YvCjp7uqj5wg==}
+      expiration: 86400000
