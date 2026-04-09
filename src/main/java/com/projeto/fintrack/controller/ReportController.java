@@ -34,8 +34,8 @@ public class ReportController {
     @GetMapping("/expenses-by-category")
     @Operation(summary = "Gastos agrupados por categoria no período")
     public List<CategoryReportResponse> getExpensesByCategory(
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate) {
+            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate startDate,
+            @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate endDate) {
         return reportService.getExpensesByCategory(startDate, endDate);
     }
 
@@ -45,4 +45,3 @@ public class ReportController {
         return reportService.getBalanceEvolution();
     }
 }
-

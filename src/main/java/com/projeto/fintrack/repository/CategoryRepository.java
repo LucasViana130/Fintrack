@@ -14,7 +14,7 @@ public interface CategoryRepository extends JpaRepository<Category, Long> {
             SELECT c FROM Category c
             WHERE c.active = true
             AND (c.user IS NULL OR c.user.id = :userId)
-            ORDER BY c.user IS NOT NULL, c.name
+            ORDER BY CASE WHEN c.user IS NULL THEN 0 ELSE 1 END, c.name
             """)
     List<Category> findAllAvailableForUser(@Param("userId") Long userId);
 

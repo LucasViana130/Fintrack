@@ -1,21 +1,23 @@
 package com.projeto.fintrack.service;
 
-import com.projeto.fintrack.DTO.request.TransactionFilterRequest;
-import com.projeto.fintrack.DTO.request.TransactionRequest;
-import com.projeto.fintrack.DTO.response.TransactionResponse;
 import com.projeto.fintrack.domain.entity.Account;
 import com.projeto.fintrack.domain.entity.Category;
 import com.projeto.fintrack.domain.entity.Transaction;
 import com.projeto.fintrack.domain.entity.User;
 import com.projeto.fintrack.domain.exception.BusinessException;
 import com.projeto.fintrack.domain.exception.ResourceNotFoundException;
+import com.projeto.fintrack.DTO.request.TransactionFilterRequest;
+import com.projeto.fintrack.DTO.request.TransactionRequest;
+import com.projeto.fintrack.DTO.response.TransactionResponse;
 import com.projeto.fintrack.mapper.TransactionMapper;
 import com.projeto.fintrack.repository.AccountRepository;
 import com.projeto.fintrack.repository.CategoryRepository;
 import com.projeto.fintrack.repository.TransactionRepository;
+import com.projeto.fintrack.repository.spec.TransactionSpec;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -55,15 +57,21 @@ public class TransactionService {
     public Page<TransactionResponse> listWithFilters(TransactionFilterRequest filter) {
         User user = userService.getAuthenticatedUser();
 
-        PageRequest pageable = PageRequest.of(filter.pageNumber(), filter.pageSize());
+        PageRequest pageable = PageRequest.of(
+                filter.pageNumber(),
+                filter.pageSize(),
+                Sort.by(Sort.Direction.DESC, "date", "createdAt")
+        );
 
-        return transactionRepository.findWithFilters(
-                user.getId(),
-                filter.startDate(),
-                filter.endDate(),
-                filter.type(),
-                filter.categoryId(),
-                filter.accountId(),
+        return transactionRepository.findAll(
+                TransactionSpec.filter(
+                        user.getId(),
+                        filter.startDate(),
+                        filter.endDate(),
+                        filter.type(),
+                        filter.categoryId(),
+                        filter.accountId()
+                ),
                 pageable
         ).map(transactionMapper::toResponse);
     }
@@ -109,11 +117,9 @@ public class TransactionService {
     private Account getActiveAccountOfUser(Long accountId, Long userId) {
         Account account = accountRepository.findByIdAndUserId(accountId, userId)
                 .orElseThrow(() -> new ResourceNotFoundException("Conta", accountId));
-
         if (!account.getActive()) {
             throw new BusinessException("A conta selecionada está inativa.");
         }
-
         return account;
     }
 

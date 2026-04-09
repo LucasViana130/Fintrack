@@ -32,7 +32,7 @@ public class TransactionController {
     @GetMapping
     @Operation(summary = "Listar transações com filtros e paginação",
             description = "Parâmetros: startDate, endDate, type, categoryId, accountId, page, size")
-    public Page<TransactionResponse> listWithFilters(TransactionFilterRequest filter) {
+    public Page<TransactionResponse> listWithFilters(@ModelAttribute TransactionFilterRequest filter) {
         return transactionService.listWithFilters(filter);
     }
 

@@ -6,10 +6,10 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.time.LocalDate;
 
 public record TransactionFilterRequest(
-        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+        @DateTimeFormat(pattern = "yyyy-MM-dd")
         LocalDate startDate,
 
-        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+        @DateTimeFormat(pattern = "yyyy-MM-dd")
         LocalDate endDate,
 
         TransactionType type,
