@@ -1,6 +1,6 @@
 package com.projeto.fintrack.mapper;
 
-import com.projeto.fintrack.DTO.response.AccountResponse;
+import com.projeto.fintrack.dto.response.AccountResponse;
 import com.projeto.fintrack.domain.entity.Account;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

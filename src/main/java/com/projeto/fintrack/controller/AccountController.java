@@ -1,7 +1,7 @@
 package com.projeto.fintrack.controller;
 
-import com.projeto.fintrack.DTO.request.AccountRequest;
-import com.projeto.fintrack.DTO.response.AccountResponse;
+import com.projeto.fintrack.dto.request.AccountRequest;
+import com.projeto.fintrack.dto.response.AccountResponse;
 import com.projeto.fintrack.service.AccountService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;

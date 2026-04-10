@@ -1,4 +1,4 @@
-package com.projeto.fintrack.DTO.response;
+package com.projeto.fintrack.dto.response;
 
 import java.math.BigDecimal;
 

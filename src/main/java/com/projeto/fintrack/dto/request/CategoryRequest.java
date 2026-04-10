@@ -1,15 +1,15 @@
-package com.projeto.fintrack.DTO.request;
+package com.projeto.fintrack.dto.request;
 
-import com.projeto.fintrack.domain.enums.AccountType;
+import com.projeto.fintrack.domain.enums.TransactionType;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public record AccountRequest(
+public record CategoryRequest(
         @NotBlank(message = "Nome é obrigatório")
         String name,
 
         @NotNull(message = "Tipo é obrigatório")
-        AccountType type,
+        TransactionType type,
 
-        String description
+        String color
 ) {}

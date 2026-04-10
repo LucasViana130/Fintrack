@@ -1,9 +1,9 @@
 package com.projeto.fintrack.controller;
 
-import com.projeto.fintrack.DTO.request.LoginRequest;
-import com.projeto.fintrack.DTO.request.RegisterRequest;
-import com.projeto.fintrack.DTO.response.LoginResponse;
-import com.projeto.fintrack.DTO.response.UserResponse;
+import com.projeto.fintrack.dto.request.LoginRequest;
+import com.projeto.fintrack.dto.request.RegisterRequest;
+import com.projeto.fintrack.dto.response.LoginResponse;
+import com.projeto.fintrack.dto.response.UserResponse;
 import com.projeto.fintrack.service.AuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

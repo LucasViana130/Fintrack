@@ -1,7 +1,7 @@
 package com.projeto.fintrack.service;
 
-import com.projeto.fintrack.DTO.request.AccountRequest;
-import com.projeto.fintrack.DTO.response.AccountResponse;
+import com.projeto.fintrack.dto.request.AccountRequest;
+import com.projeto.fintrack.dto.response.AccountResponse;
 import com.projeto.fintrack.domain.entity.Account;
 import com.projeto.fintrack.domain.entity.User;
 import com.projeto.fintrack.domain.exception.BusinessException;

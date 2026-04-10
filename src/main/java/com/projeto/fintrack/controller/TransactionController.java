@@ -1,8 +1,8 @@
 package com.projeto.fintrack.controller;
 
-import com.projeto.fintrack.DTO.request.TransactionFilterRequest;
-import com.projeto.fintrack.DTO.request.TransactionRequest;
-import com.projeto.fintrack.DTO.response.TransactionResponse;
+import com.projeto.fintrack.dto.request.TransactionFilterRequest;
+import com.projeto.fintrack.dto.request.TransactionRequest;
+import com.projeto.fintrack.dto.response.TransactionResponse;
 import com.projeto.fintrack.service.TransactionService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;

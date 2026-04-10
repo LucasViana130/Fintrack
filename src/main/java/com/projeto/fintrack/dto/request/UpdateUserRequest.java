@@ -1,4 +1,4 @@
-package com.projeto.fintrack.DTO.request;
+package com.projeto.fintrack.dto.request;
 
 import jakarta.validation.constraints.Size;
 

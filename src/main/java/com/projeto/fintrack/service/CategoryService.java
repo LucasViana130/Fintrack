@@ -1,7 +1,7 @@
 package com.projeto.fintrack.service;
 
-import com.projeto.fintrack.DTO.request.CategoryRequest;
-import com.projeto.fintrack.DTO.response.CategoryResponse;
+import com.projeto.fintrack.dto.request.CategoryRequest;
+import com.projeto.fintrack.dto.response.CategoryResponse;
 import com.projeto.fintrack.domain.entity.Category;
 import com.projeto.fintrack.domain.entity.User;
 import com.projeto.fintrack.domain.exception.BusinessException;

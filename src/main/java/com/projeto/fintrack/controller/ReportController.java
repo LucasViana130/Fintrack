@@ -1,8 +1,8 @@
 package com.projeto.fintrack.controller;
 
-import com.projeto.fintrack.DTO.response.BalanceEvolutionResponse;
-import com.projeto.fintrack.DTO.response.CategoryReportResponse;
-import com.projeto.fintrack.DTO.response.MonthlySummaryResponse;
+import com.projeto.fintrack.dto.response.BalanceEvolutionResponse;
+import com.projeto.fintrack.dto.response.CategoryReportResponse;
+import com.projeto.fintrack.dto.response.MonthlySummaryResponse;
 import com.projeto.fintrack.service.ReportService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;

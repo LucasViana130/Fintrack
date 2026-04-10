@@ -1,9 +1,9 @@
 package com.projeto.fintrack.service;
 
-import com.projeto.fintrack.DTO.request.LoginRequest;
-import com.projeto.fintrack.DTO.request.RegisterRequest;
-import com.projeto.fintrack.DTO.response.LoginResponse;
-import com.projeto.fintrack.DTO.response.UserResponse;
+import com.projeto.fintrack.dto.request.LoginRequest;
+import com.projeto.fintrack.dto.request.RegisterRequest;
+import com.projeto.fintrack.dto.response.LoginResponse;
+import com.projeto.fintrack.dto.response.UserResponse;
 import com.projeto.fintrack.domain.entity.User;
 import com.projeto.fintrack.domain.exception.BusinessException;
 import com.projeto.fintrack.mapper.UserMapper;

@@ -1,7 +1,7 @@
 package com.projeto.fintrack.service;
 
-import com.projeto.fintrack.DTO.request.UpdateUserRequest;
-import com.projeto.fintrack.DTO.response.UserResponse;
+import com.projeto.fintrack.dto.request.UpdateUserRequest;
+import com.projeto.fintrack.dto.response.UserResponse;
 import com.projeto.fintrack.domain.entity.User;
 import com.projeto.fintrack.domain.exception.ResourceNotFoundException;
 import com.projeto.fintrack.mapper.UserMapper;

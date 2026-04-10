@@ -1,7 +1,7 @@
 package com.projeto.fintrack.controller;
 
-import com.projeto.fintrack.DTO.request.CategoryRequest;
-import com.projeto.fintrack.DTO.response.CategoryResponse;
+import com.projeto.fintrack.dto.request.CategoryRequest;
+import com.projeto.fintrack.dto.response.CategoryResponse;
 import com.projeto.fintrack.service.CategoryService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;

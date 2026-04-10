@@ -1,8 +1,8 @@
 package com.projeto.fintrack.service;
 
-import com.projeto.fintrack.DTO.response.BalanceEvolutionResponse;
-import com.projeto.fintrack.DTO.response.CategoryReportResponse;
-import com.projeto.fintrack.DTO.response.MonthlySummaryResponse;
+import com.projeto.fintrack.dto.response.BalanceEvolutionResponse;
+import com.projeto.fintrack.dto.response.CategoryReportResponse;
+import com.projeto.fintrack.dto.response.MonthlySummaryResponse;
 import com.projeto.fintrack.domain.entity.User;
 import com.projeto.fintrack.domain.enums.TransactionType;
 import com.projeto.fintrack.repository.TransactionRepository;
