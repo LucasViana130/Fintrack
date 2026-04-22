@@ -17,7 +17,7 @@ public class CorsConfig {
         config.setAllowedMethods(List.of(
                 "GET", "POST", "PUT", "DELETE", "OPTIONS"
         ));
-        config.setAllowedHeaders(List.of("*"));
+        config.setAllowedHeaders(List.of("fintrack-web-rosy.vercel.app"));
         config.setAllowCredentials(true);
         config.setMaxAge(3600L);
 
