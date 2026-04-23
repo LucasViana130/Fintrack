@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💳 FinTrack API https://fintrack-web-rosy.vercel.app/
+# 💳 FinTrack API
 
 ### Backend — API REST de Controle Financeiro Pessoal
 
