@@ -9,7 +9,6 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
 [![Railway](https://img.shields.io/badge/Deploy-Railway-purple?style=flat-square&logo=railway)](https://railway.app)
 
-**[🌐 API em produção](https://fintrack-production-39f1.up.railway.app)** •
 **[📖 Swagger UI](https://fintrack-production-39f1.up.railway.app/swagger-ui.html)** •
 **[💻 Repositório Frontend](https://github.com/LucasViana130/fintrack-web)**
 
